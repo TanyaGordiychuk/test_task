@@ -1,0 +1,49 @@
+main {
+	width: 870px;
+}
+
+.main {
+
+	&__image {
+		margin-top: 3px;
+	}
+
+	&__title {
+		font-size: 30px;
+		font-weight: 700;
+		color: @default-title;
+		margin: 31px 0;
+	}
+
+	&__text {
+		font-size: 13px;
+		font-family: @Arial;
+		line-height: 17px;
+		margin-bottom: 21px;
+	}
+}
+
+.tabs {
+	margin: 36px 0;
+
+	&__content {
+		font-size: 13px;
+		padding-top: 43px;
+		padding-left: 34px;
+		padding-bottom: 34px;
+		max-width: 730px;
+
+	}
+}
+
+.tab1-content,
+.tab2-content,
+.tab3-content {
+	display: none;
+}
+
+#tab1:checked ~ .tab1-content,
+#tab2:checked ~ .tab2-content,
+#tab3:checked ~ .tab3-content {
+	display: block;
+}

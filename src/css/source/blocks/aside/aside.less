@@ -1,0 +1,81 @@
+aside {
+	width: 100%;
+	max-width: 270px;
+}
+
+.linkbox {
+	width: 100%;
+	background: @green;
+	color: white;
+
+	&__title {
+		font-size: 18px;
+		font-weight: 700;
+		padding-top: 23px;
+		padding-left: 20px;
+	}
+
+	&__list {
+		display: block;
+		padding: 13px 20px 24px 21px;
+
+	}
+
+	&__item {
+		display: flex;
+		height: 44px;
+		border-bottom: 1px solid #9acd53;
+
+		&:last-child {
+			border-bottom: none;
+		}
+
+		&:hover {
+			background-color: @green-darker;
+			background-image: url(../../../i/arrow.png);
+			background-repeat: no-repeat;
+			background-position: 94% 50%;
+			border-radius: 4px;
+		}
+	}
+
+	&__link {
+		padding-left: 24px;
+		font-size: 13px;
+		align-self: center;
+		width: 100%;
+	}
+}
+
+.contacts {
+	margin: 52px 0;
+	
+	&__title {
+		padding: 15px 0;
+		border-bottom: 1px solid @grey-border;
+		font-size: 18px;
+		font-weight: 700;
+		color: @default-title;
+	}
+
+	&__list {}
+
+	&__item {
+		display: flex;
+		align-items: center;
+	}
+
+	&__location {
+		margin-top: 29px;
+		font-size: 13px;
+	}
+
+	&__phone {
+		font-size: 18px;
+		margin-top: 34px;
+	}
+
+	&__text {
+		padding: 0 18px;
+	}
+}

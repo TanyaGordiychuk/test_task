@@ -1,0 +1,31 @@
+.current-page {
+	background-color: @green;
+
+	&__block {
+		height: 52px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		color: white;
+	}
+
+	&__title {
+		font-size: 20px;
+		font-weight: 700;
+	}
+
+	&__link {
+		font-size: 13px;
+		font-family: @Arial;
+	}
+
+	&__home-link {
+		opacity: .5;
+
+		&:after {
+			content: '|';
+			padding: 0 10px;
+			opacity: 1;
+		}
+	}
+}

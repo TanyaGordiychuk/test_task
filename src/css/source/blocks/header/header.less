@@ -1,0 +1,64 @@
+.header {
+
+	background-image: url(../../../i/header.png);
+
+	&__block {
+		height: 134px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 0 12px;
+
+		color: white;
+	}
+
+	&-logo {
+		position: relative;
+		font-size: 28.43px;
+		display: flex;
+		align-items: center;
+
+		&__text {
+			position: absolute;
+			left: 31px;
+			top: 12px;
+			display: flex;
+			align-items: center;
+		}
+
+		&__first-text {
+			color: @green-items;
+			font-weight: 900;
+			padding-right: 6px;
+
+			&:first-letter {
+				color: white;
+			}
+		}
+
+		&__second-text {
+			font-weight: 100;
+		}
+	}
+}
+
+.navbar {
+
+	&__item {
+		padding: 13px 19px;
+		border-left: 4px solid transparent;
+
+		&:hover {
+			background: rgba(0, 0, 0, 0.3);
+			border-left: 4px solid @green-border;
+			border-radius: 0 4px 4px 0;
+		}
+	}
+
+	&__link {
+		//font-family: @Open-Sans;
+		color: white;
+		font-weight: 700;
+	}
+
+}

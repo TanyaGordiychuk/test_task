@@ -1,0 +1,99 @@
+.useful-links-wrapper {
+	background-image: url(../../../i/bottom.png);
+	border-bottom: 3px solid @green-items;
+	min-height: 532px;
+	margin-top: 66px !important;
+}
+
+.useful-links {
+	display: flex;
+	color: white;
+	padding-top: 70px;
+
+	&__block {
+		width: 270px;
+		margin-right: 29px;
+
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+
+	&__title {
+		font-size: 20px;
+		font-weight: 700;
+		padding-bottom: 28px;
+
+		&:after {
+			content: '';
+			display: block;
+			margin-top: 21px;
+			height: 2px;
+			width: 30px;
+			background: @green-items;
+		}
+	}
+
+	&__list {
+		display: block;
+	}
+
+	&__item {
+		display: block;
+		padding-bottom: 9px;
+	}
+
+	&__link {
+		font-size: 13px;
+		font-family: @Arial;
+	}
+}
+
+.copyright {
+	max-width: 1204px;
+	height: 130px;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	
+	&__text {
+		font-size: 14px;
+		
+		&-green {
+			color: @green-items;
+		}
+	}
+}
+
+.networks {
+	margin-right: 37px;
+
+	&__button {
+		height: 20px;
+		width: 20px;
+		margin-top: 6px;
+		margin-left: 3px;
+		background: url(../../../i/networks-sprite.png) no-repeat;
+
+		&-facebook {
+			background-position: 0 0;
+		}
+
+		&-vimeo {
+			background-position: -25px 0;
+		}
+
+		&-linked {
+			background-position: -50px 0;
+		}
+
+		&-twitter {
+			background-position: -75px 0;
+		}
+
+		&-skype {
+			background-position: -126px 0;
+		}
+	}
+}

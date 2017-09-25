@@ -1,0 +1,69 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    overflow-y: scroll;
+    min-height: 100%;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+    font-size: 11px;
+    color: @default-text;
+	font-weight: 400;
+    height: 100%;
+    min-width: 100%;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+ul, li {
+	.list-reset;
+    display: inline-block;
+}
+
+p {
+    margin: 0;
+}
+
+figure {
+    margin: 0;
+}
+
+input[type="radio"] {
+    display:none;
+}
+
+input[type="radio"] + label {
+    font-size: 16px;
+	font-weight: 700;
+	font-family: @Roboto;
+    color: @black-tab;
+    cursor: pointer;
+	display: inline-block;
+	padding: 14px 27px;
+}
+
+input[type="radio"]:checked + label {
+	background: @green-items;
+	color: white;
+}
+
+button {
+	border: none;
+	cursor: pointer;
+
+	&:hover, &:active {
+		border: none;
+	}
+}
